@@ -14,11 +14,11 @@
 - TASK2：**基础任务**  
   - TASK2.0：**机械小狗的建模与装配**
     - TASK 2.0.0: **小狗本体与履带的建模**\
-      你需要通过SolidWorks进行小狗本体的建模、履带建模、直流电机建模等  
+      你需要通过SolidWorks进行小狗本体的建模、履带建模、链轮建模、直流电机建模等  
       (1)：小狗本体的建模应有预留的可以给电机、LCD屏幕以及电路板固定的孔位，明显的棱边需要进行倒角或圆角处理  
       (2)：舵机、LCD屏的建模应尽可能准确，方便后续装配。你也可以向商家索要模型  
       (3)：小狗本体的建模应使用尽可能少的特征树，这样既易读懂又方便后续修改  
-      (4)：履带建模可以参考此视频：https://www.bilibili.com/video/BV1h9VgzPEYk/?spm_id_from=333.1387.favlist.content.click&vd_source=fcc63609845574c1206cec5c666affba
+      (4)：履带和链轮建模可以参考此视频：https://www.bilibili.com/video/BV1h9VgzPEYk/?spm_id_from=333.1387.favlist.content.click&vd_source=fcc63609845574c1206cec5c666affba
     - TASK 2.0.1：**机械小狗的装配**\
       单个零件并没有什么作用，他们装配起来才是一个完整的机构  
       你需要把所有的零件装配成一个装配体，并进行干涉检查  

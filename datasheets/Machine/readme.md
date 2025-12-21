@@ -16,9 +16,9 @@
       单个零件并没有什么作用，他们装配起来才是一个完整的机构  
       你需要把所有的零件装配成一个装配体，并进行干涉检查  
       最后，将“小狗本体特征树截图”、“装配体打包”以及“干涉检查截图”与软件组一起上传在git地址里  
-      <img src="./datasheets/Machine/2.png" alt="小狗本体特征树截图" width="640">
-      <img src="./datasheets/Machine/3.png" alt="装配体打包" width="640">
-      <img src="./datasheets/Machine/1.png" alt="干涉检查截图" width="640">
+      <img src="./Machine/2.png" alt="小狗本体特征树截图" width="640">
+      <img src="./Machine/3.png" alt="装配体打包" width="640">
+      <img src="./Machine/1.png" alt="干涉检查截图" width="640">
   - TASK2.1 **小狗本体的3D打印**\
     先前没有使用过BambuStudio的小伙伴请从b站上学习完相应3D打印知识后再进行小狗本体等3D打印
 - TASK3：**附加任务**\

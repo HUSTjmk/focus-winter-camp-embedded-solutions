@@ -47,7 +47,7 @@
 - docs目录下放置一些需要的图片、视频等
 - TASK1：**环境搭建** 
   - TASK1.0:**搭建环境** 
-    - TASK1.0.0：**搭建stm32的环境** 
+    - TASK1.0.0：**搭建stm32的环境**   
       千里之行，始于足下！开发一块板子你首先需要一个开发环境。对于stm32开发来说，主流有寄存器/标准库/HAL库等开发方式。我们推荐HAL库开发，当然你也可以参考江科大等优秀的历程使用其他方式开发。下面的叙述都是基于HAL库（Keil+Cubemx+Vscode的Keil插件）为基础。下面是我们推荐的参考教程：
       - 标准库：[闻名四海的江科大](https://www.bilibili.com/video/BV1th411z7sn)
       - HAL库（Keil+Cubemx+Vscode）：[尚硅谷，没时间可以跳过寄存器](https://www.bilibili.com/video/BV1KM4m1U7f1/)
@@ -61,22 +61,22 @@
     - TASK2.0.0：**看看学长为你们准备的资料** 
       Datasheets/Software/... 
       对应教程的pwm章节
-    - TASK2.0.1：**让电机动起来** 
+    - TASK2.0.1：**让电机动起来**   
       测试四个电机，看看它们能不能转动你想要的速度
     - TASK2.0.2：**试试四个电机怎么协调运动，可以让桌宠实现前后左右自由运动** 
-    - TASK2.0.3：**让舵机动起来** 
+    - TASK2.0.3：**让舵机动起来**   
       驱动舵机需要特殊频率与占空比的pwm波。参考之前的教程，让舵机转到你想要的角度吧
-    - TASK2.0.4：**你可以DIY一些喜欢的动作** 
+    - TASK2.0.4：**你可以DIY一些喜欢的动作**   
         自定义一些可爱的动作，萌化学长学姐，你更可以让我们关注到你哦～**录一段视频**，让我们看见你的宠物的基本动作和可爱的动作（可以不可爱）
   - TASK2.1：**Audio**
     - TASK2.1.0：**看看学长为你们准备的资料** 
-      - Datasheets/Software/... 
-        网址：...
-    - TASK2.1.1：**实现语音播放** 
+      Datasheets/Software/...  
+      网址：...
+    - TASK2.1.1：**实现语音播放**   
       你需要查阅SU-03T手册，登陆他们的官网烧录固件，实现语语音播报功能。
-    - TASK2.1.2：**实现离线词的使用** 
+    - TASK2.1.2：**实现离线词的使用**  
       好了，你现在已经学会了怎么输出语音了，真棒👍！但是要实现人与桌宠的对话，还要让桌宠听懂你的话。这就需要音频输入与语音识别功能了——SU-03T帮你训练好了微型的语音识别模型，接下来自己动手，让桌宠听见你说的话吧～
-    - TASK2.1.3：**用离线词实现运动控制吧** 
+    - TASK2.1.3：**用离线词实现运动控制吧**  
       想必你/你得力的队员已经把运动控制搞定了，现在给桌宠说一句”前进”，让它向前冲吧（其他也行）！**这里录一段视频，展现上面的效果！**
       <a id="audio-another-solution"></a>
     - *TASK2.1.4：**语言交互的另一种solution**         
@@ -100,12 +100,13 @@
       网址：...
     - TASK2.3.1：**实现超声波测距功能**  
       使用HC-SR04实现最基础的测距功能。
-    - TASK2.3.2：**让你的桌宠一定程度上的粘人** 
+    - TASK2.3.2：**让你的桌宠一定程度上的粘人**   
       试着完成一个功能，桌宠始终和你保持固定距离，你走远了他会追上来，你凑近了它会远离
     - TASK2.3.3：**让你的桌宠稍微智能一点的一定程度上的粘人** 
       我们希望你离它很远的时候它可以很快过来，在跟过来的时候速度逐渐下降，实现**平滑**的运动。可见以下VCR。
-      <video src="docs/Software/ultrasonic-pid.mp4" controls width="100%"></video>
-  - TASK2.4：**Sensor** 
+      <!-- <video src="docs/Software/ultrasonic-pid.mp4" controls width="100%"></video> -->
+      [![超声波PID演示视频](https://github.com/HUSTjmk/HUSTjmk/focus-winter-camp-embedded-solutions/raw/main/docs/Software/ultrasonic-pid-cover.jpg)](https://github.com/HUSTjmk/HUSTjmk/focus-winter-camp-embedded-solutions/raw/main/docs/Software/ultrasonic-pid.mp4)
+  - TASK2.4：**Sensor**  
     我们要使用的是PAJ7620U2手势传感器模块，它可以识别基础的手势，丰富我们与桌宠的交互方式
     - Task2.4.0：**看看学长为你们准备的资料** 
       Datasheets/Software/.. 

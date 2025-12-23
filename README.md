@@ -103,9 +103,8 @@
     - TASK2.3.2：**让你的桌宠一定程度上的粘人**   
       试着完成一个功能，桌宠始终和你保持固定距离，你走远了他会追上来，你凑近了它会远离
     - TASK2.3.3：**让你的桌宠稍微智能一点的一定程度上的粘人** 
-      我们希望你离它很远的时候它可以很快过来，在跟过来的时候速度逐渐下降，实现**平滑**的运动。可见以下VCR。
-      <!-- <video src="docs/Software/ultrasonic-pid.mp4" controls width="100%"></video> -->
-     [![超声波PID控制演示](https://github.com/HUSTjmk/focus-winter-camp-embedded-solutions/blob/main/docs/Software/ultrasonic-pid.jpg)](https://github.com/HUSTjmk/focus-winter-camp-embedded-solutions/blob/main/docs/Software/ultrasonic-pid.mp4)
+      我们希望你离它很远的时候它可以很快过来，在跟过来的时候速度逐渐下降，实现**平滑**的运动。可见以下VCR(docs/Software/ultrasonic-pid.mp4)
+     [![超声波PID控制演示](https://github.com/HUSTjmk/focus-winter-camp-embedded-solutions/raw/main/docs/Software/ultrasonic-pid.jpg)](https://github.com/HUSTjmk/focus-winter-camp-embedded-solutions/raw/main/docs/Software/ultrasonic-pid.mp4)
   - TASK2.4：**Sensor**  
     我们要使用的是PAJ7620U2手势传感器模块，它可以识别基础的手势，丰富我们与桌宠的交互方式
     - Task2.4.0：**看看学长为你们准备的资料** 

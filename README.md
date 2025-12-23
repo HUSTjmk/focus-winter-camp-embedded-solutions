@@ -106,7 +106,7 @@
     - TASK2.3.2：**让你的桌宠一定程度上的粘人**   
       试着完成一个功能，桌宠始终和你保持固定距离，你走远了他会追上来，你凑近了它会远离
     - TASK2.3.3：**让你的桌宠稍微智能一点的一定程度上的粘人**  
-      我们希望宠物离你很远的时候它可以很快过来，在跟过来的时候速度逐渐下降，实现**平滑**的运动。可见以下VCR(在docs/Software/ultrasonic-pid.mp4)
+      我们希望宠物离你很远的时候它可以很快过来，在跟过来的时候速度逐渐下降，实现**平滑**的运动。可见以下VCR[文件在docs/Software/ultrasonic-pid.mp4](docs/Software/ultrasonic-pid.mp4)
      [![超声波PID控制演示](https://github.com/HUSTjmk/focus-winter-camp-embedded-solutions/raw/main/docs/Software/ultrasonic-pid.jpg)](https://github.com/HUSTjmk/focus-winter-camp-embedded-solutions/raw/main/docs/Software/ultrasonic-pid.mp4)
      **录制一段视频发过来，展示上面的效果**，如果做不出来，可以拿模块做个避障，不要浪费了
   - TASK2.4：**Sensor**  

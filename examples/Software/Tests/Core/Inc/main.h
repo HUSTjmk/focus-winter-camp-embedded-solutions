@@ -57,31 +57,27 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define Wheel1_Spd_Pin GPIO_PIN_0
-#define Wheel1_Spd_GPIO_Port GPIOA
-#define Wheel2_Spd_Pin GPIO_PIN_1
-#define Wheel2_Spd_GPIO_Port GPIOA
-#define Wheel3_Spd_Pin GPIO_PIN_2
-#define Wheel3_Spd_GPIO_Port GPIOA
-#define Wheel4_Spd_Pin GPIO_PIN_3
-#define Wheel4_Spd_GPIO_Port GPIOA
+#define LED_Pin GPIO_PIN_13
+#define LED_GPIO_Port GPIOC
+#define Wheel1_IN1_Pin GPIO_PIN_0
+#define Wheel1_IN1_GPIO_Port GPIOA
+#define Wheel1_IN2_Pin GPIO_PIN_1
+#define Wheel1_IN2_GPIO_Port GPIOA
+#define Wheel2_IN1_Pin GPIO_PIN_2
+#define Wheel2_IN1_GPIO_Port GPIOA
+#define Wheel2_IN2_Pin GPIO_PIN_3
+#define Wheel2_IN2_GPIO_Port GPIOA
+#define Ultrasonic_Trig_Pin GPIO_PIN_7
+#define Ultrasonic_Trig_GPIO_Port GPIOA
+#define Servo_Pin GPIO_PIN_0
+#define Servo_GPIO_Port GPIOB
 #define Ultrasonic_Echo_Pin GPIO_PIN_1
 #define Ultrasonic_Echo_GPIO_Port GPIOB
 #define Ultrasonic_Echo_EXTI_IRQn EXTI1_IRQn
-#define Ultrasonic_Trigger_Pin GPIO_PIN_2
-#define Ultrasonic_Trigger_GPIO_Port GPIOB
 #define Audio_TX_Pin GPIO_PIN_10
 #define Audio_TX_GPIO_Port GPIOB
 #define Audio_RX_Pin GPIO_PIN_11
 #define Audio_RX_GPIO_Port GPIOB
-#define Wheel1_Dir_Pin GPIO_PIN_12
-#define Wheel1_Dir_GPIO_Port GPIOB
-#define Wheel2_Dir_Pin GPIO_PIN_13
-#define Wheel2_Dir_GPIO_Port GPIOB
-#define Wheel3_Dir_Pin GPIO_PIN_14
-#define Wheel3_Dir_GPIO_Port GPIOB
-#define Wheel4_Dir_Pin GPIO_PIN_15
-#define Wheel4_Dir_GPIO_Port GPIOB
 #define I2C_Bus_SCL_Pin GPIO_PIN_6
 #define I2C_Bus_SCL_GPIO_Port GPIOB
 #define I2C_Bus_SDA_Pin GPIO_PIN_7

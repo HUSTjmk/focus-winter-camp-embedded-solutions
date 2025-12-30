@@ -78,6 +78,9 @@ void Error_Handler(void);
 #define Audio_TX_GPIO_Port GPIOB
 #define Audio_RX_Pin GPIO_PIN_11
 #define Audio_RX_GPIO_Port GPIOB
+#define GESTURE_INT_Pin GPIO_PIN_5
+#define GESTURE_INT_GPIO_Port GPIOB
+#define GESTURE_INT_EXTI_IRQn EXTI9_5_IRQn
 #define I2C_Bus_SCL_Pin GPIO_PIN_6
 #define I2C_Bus_SCL_GPIO_Port GPIOB
 #define I2C_Bus_SDA_Pin GPIO_PIN_7

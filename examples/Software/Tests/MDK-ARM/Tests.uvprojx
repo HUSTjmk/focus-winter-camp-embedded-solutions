@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Application/Inc;../BSP/Inc</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Application/Inc;../BSP/Inc;../Drivers/ssd1306;../Drivers/paj7620</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -584,6 +584,26 @@
               <FileType>5</FileType>
               <FilePath>..\BSP\Inc\bsp_ultrasonic.h</FilePath>
             </File>
+            <File>
+              <FileName>bsp_it.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\Inc\bsp_it.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\Src\bsp_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_gesture.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\Src\bsp_gesture.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_gesture.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\Inc\bsp_gesture.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -620,9 +640,44 @@
               <FilePath>..\Application\Src\movement.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_ultrasonic.h</FileName>
+              <FileName>audio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\BSP\Inc\bsp_ultrasonic.h</FilePath>
+              <FilePath>..\Application\Inc\audio.h</FilePath>
+            </File>
+            <File>
+              <FileName>blinking.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Application\Inc\blinking.h</FilePath>
+            </File>
+            <File>
+              <FileName>display.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Application\Inc\display.h</FilePath>
+            </File>
+            <File>
+              <FileName>following.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Application\Inc\following.h</FilePath>
+            </File>
+            <File>
+              <FileName>gesture.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Application\Inc\gesture.h</FilePath>
+            </File>
+            <File>
+              <FileName>movement.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Application\Inc\movement.h</FilePath>
+            </File>
+            <File>
+              <FileName>tail.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Application\Inc\tail.h</FilePath>
+            </File>
+            <File>
+              <FileName>tail.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Application\Src\tail.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -631,6 +686,48 @@
         </Group>
         <Group>
           <GroupName>Driver/ssd1306</GroupName>
+          <Files>
+            <File>
+              <FileName>OLED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\ssd1306\OLED.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\ssd1306\OLED.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_Data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\ssd1306\OLED_Data.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_Data.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\ssd1306\OLED_Data.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Driver/paj7620</GroupName>
+          <Files>
+            <File>
+              <FileName>paj7620.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\paj7620\paj7620.c</FilePath>
+            </File>
+            <File>
+              <FileName>paj7620.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\paj7620\paj7620.h</FilePath>
+            </File>
+            <File>
+              <FileName>paj7620_conf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\paj7620\paj7620_conf.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>

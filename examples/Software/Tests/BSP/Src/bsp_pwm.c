@@ -17,9 +17,9 @@ void bsp_wheel_pwm_stop(void)
 {
     HAL_TIM_PWM_Stop(&htim2, TIM_CHANNEL_ALL);
 }
-void bsp_wheel_set_pwm(BSP_Wheel_PWM_ChannelTypeDef channel, uint32_t duty_cycle)
+void bsp_wheel_set_pwm(BSP_Wheel_PWM_ChannelTypeDef channel, float duty_cycle)
 {
-    __HAL_TIM_SET_COMPARE(&htim2, channel, duty_cycle);
+    __HAL_TIM_SET_COMPARE(&htim2, channel, duty_cycle*TIM2->ARR);
 }
 
 void bsp_servo_pwm_init(void)
@@ -42,7 +42,7 @@ void bsp_servo_pwm_stop(void)
     HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);
 }
 
-void bsp_servo_set_pwm(uint32_t duty_cycle)
+void bsp_servo_set_pwm(float duty_cycle)
 {
-    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, duty_cycle);
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, duty_cycle*TIM3->ARR);
 }

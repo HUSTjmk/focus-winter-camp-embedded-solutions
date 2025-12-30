@@ -1,7 +1,7 @@
 #include "tim.h"
 #include "bsp_timer.h"
 
-void(*bsp_timer_period_elapsed_callback)(void) = 0;
+void(*bsp_timer_period_elapsed_callback_)(void) = NULL;
 
 void bsp_timer_init(void)
 {
@@ -15,12 +15,11 @@ void bsp_timer_deinit(void)
 
 void bsp_timer_start(void)
 {
-    HAL_TIM_Base_Start(&htim4);
+    HAL_TIM_Base_Start_IT(&htim4);
 }
-
 void bsp_timer_stop(void)
 {
-    HAL_TIM_Base_Stop(&htim4);
+    HAL_TIM_Base_Stop_IT(&htim4);
 }
 
 void bsp_timer_reset(void)
@@ -51,19 +50,31 @@ uint32_t bsp_timer_get_counter(void)
 
 void bsp_timer_set_period_elapsed_callback(void(*callback)(void))
 {
-    bsp_timer_period_elapsed_callback = callback;
+    bsp_timer_period_elapsed_callback_ = callback;
 }
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+void bsp_timer_clear_period_elapsed_callback(void)
 {
-    if (htim->Instance == TIM4)
+    bsp_timer_period_elapsed_callback_ = NULL;
+}
+
+void bsp_timer_period_elapsed_callback(void)
+{
+    if (bsp_timer_period_elapsed_callback_)
     {
-        if (bsp_timer_period_elapsed_callback)
-        {
-            bsp_timer_period_elapsed_callback();
-        }
+        bsp_timer_period_elapsed_callback_();
     }
 }
+
+uint32_t bsp_timer_get_us(void)
+{
+    uint32_t timer_clock = HAL_RCC_GetPCLK1Freq(); // TIM4 is on APB1
+    uint32_t prescaler = htim4.Init.Prescaler + 1; // Prescaler is zero-based
+    uint32_t timer_frequency = timer_clock / prescaler; // Timer frequency in Hz
+    uint32_t counter = bsp_timer_get_counter();
+    return (counter * 1000000) / timer_frequency; // Convert to microseconds
+}
+
 
 
 

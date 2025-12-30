@@ -10,6 +10,8 @@
                 "d:\\Focus\\winter-camp\\embedded\\solutions\\examples\\software\\Tests\\Drivers\\CMSIS\\Include",
                 "d:\\Focus\\winter-camp\\embedded\\solutions\\examples\\software\\Tests\\Application\\Inc",
                 "d:\\Focus\\winter-camp\\embedded\\solutions\\examples\\software\\Tests\\BSP\\Inc",
+                "d:\\Focus\\winter-camp\\embedded\\solutions\\examples\\software\\Tests\\Drivers\\ssd1306",
+                "d:\\Focus\\winter-camp\\embedded\\solutions\\examples\\software\\Tests\\Drivers\\paj7620",
                 "D:\\Keil5\\Keil_v5\\ARM\\ARMCC\\include",
                 "D:\\Keil5\\Keil_v5\\ARM\\ARMCC\\include\\arm_linux",
                 "D:\\Keil5\\Keil_v5\\ARM\\ARMCC\\include\\arm_linux_compat",

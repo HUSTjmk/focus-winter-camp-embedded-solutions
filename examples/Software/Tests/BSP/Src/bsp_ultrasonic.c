@@ -3,7 +3,7 @@
 #include "stm32f1xx_it.h"
 #include "stdbool.h"
 
-void(*bsp_ultrasonic_echo_callback)(void) = 0;
+static void(*bsp_ultrasonic_echo_callback_)(uint8_t state) = 0;
 
 static void bsp_delay_microseconds(uint32_t us)
 {
@@ -25,7 +25,7 @@ void bsp_ultrasonic_init(void)
     HAL_GPIO_Init(Ultrasonic_Trig_GPIO_Port, &GPIO_InitStruct);
 
     GPIO_InitStruct.Pin = Ultrasonic_Echo_Pin;
-    GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+    GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
     GPIO_InitStruct.Pull = GPIO_PULLDOWN;
     HAL_GPIO_Init(Ultrasonic_Echo_GPIO_Port, &GPIO_InitStruct);
 
@@ -46,9 +46,23 @@ void bsp_ultrasonic_reset(void)
     bsp_ultrasonic_init();
 }
 
-void bsp_ultrasonic_set_echo_callback(void(*callback)(void))
+void bsp_ultrasonic_set_echo_callback(void(*callback)(uint8_t state))
 {
-    bsp_ultrasonic_echo_callback = callback;
+    bsp_ultrasonic_echo_callback_ = callback;
+}
+
+void bsp_ultrasonic_clear_echo_callback(void)
+{
+    bsp_ultrasonic_echo_callback_ = NULL;
+}
+
+void bsp_ultrasonic_echo_callback(void)
+{
+    if (bsp_ultrasonic_echo_callback_)
+    {
+        uint8_t echo_state = (uint8_t)HAL_GPIO_ReadPin(Ultrasonic_Echo_GPIO_Port, Ultrasonic_Echo_Pin);
+        bsp_ultrasonic_echo_callback_(echo_state);
+    }
 }
 
 void bsp_ultrasonic_trigger_pulse(uint32_t pulse_width_us)
@@ -63,13 +77,3 @@ bool bsp_ultrasonic_get_echo_state(void)
     return (bool)HAL_GPIO_ReadPin(Ultrasonic_Echo_GPIO_Port, Ultrasonic_Echo_Pin);
 }
 
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-    if (GPIO_Pin == Ultrasonic_Echo_Pin)
-    {
-        if (bsp_ultrasonic_echo_callback)
-        {
-            bsp_ultrasonic_echo_callback();
-        }
-    }
-}

@@ -26,7 +26,7 @@
       <img src="datasheets/Machine/3.png" alt="装配体打包" width="640">
       <img src="datasheets/Machine/1.png" alt="干涉检查截图" width="640">
   - TASK2.1 **小狗本体的3D打印**\
-    先前没有使用过BambuStudio的小伙伴请从b站上学习完相应3D打印知识后再进行小狗本体等3D打印
+    先前没有使用过BambuStudio的小伙伴请从b站上学习完相应3D打印知识后再进行小狗本体等3D打印  
      ⚠ 团队内不允许出现过夜打印件  
 - TASK3：**附加任务**\
   我们的任务最终是为了做出一个完整的产品，而完整的产品要求好的封装  

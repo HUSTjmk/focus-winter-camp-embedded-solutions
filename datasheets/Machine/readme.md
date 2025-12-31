@@ -12,7 +12,8 @@
       (1)：小狗本体的建模应有预留的可以给电机、LCD屏幕以及电路板固定的孔位，不允许存在没有固定的电子元器件。小狗体积限制在256mm*256mm*200mm
       (2)：舵机、LCD屏的建模应尽可能准确，方便后续装配。你也可以向商家索要最为准确模型  
       (3)：对于小狗本体上明显的棱边需要进行倒角或圆角处理  
-      (4)：履带和链轮建模可以参考此视频：  https://www.bilibili.com/video/BV1h9VgzPEYk/?spm_id_from=333.1387.favlist.content.click&vd_source=fcc63609845574c1206cec5c666affba  https://www.bilibili.com/video/BV1Tz42117Ah/?spm_id_from=333.1387.favlist.content.click&vd_source=fcc63609845574c1206cec5c666affba  https://www.bilibili.com/video/BV1hj8ze8EAq/?spm_id_from=333.1387.favlist.content.click&vd_source=fcc63609845574c1206cec5c666affba  
+      (4)：履带和链轮建模可以参考此视频：  
+      https://www.bilibili.com/video/BV1h9VgzPEYk/?spm_id_from=333.1387.favlist.content.click&vd_source=fcc63609845574c1206cec5c666affba  https://www.bilibili.com/video/BV1Tz42117Ah/?spm_id_from=333.1387.favlist.content.click&vd_source=fcc63609845574c1206cec5c666affba  https://www.bilibili.com/video/BV1hj8ze8EAq/?spm_id_from=333.1387.favlist.content.click&vd_source=fcc63609845574c1206cec5c666affba  
       (5):装配完成后请务必进行干涉检查，不允许出现大于1mm³的干涉（过盈配合等除外）  
     - TASK 2.0.1：**机械小狗的装配**\
       单个零件并没有什么作用，他们装配起来才是一个完整的机构  

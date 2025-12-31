@@ -23,8 +23,8 @@
       你需要把所有的零件装配成一个装配体，并进行干涉检查  
       最后，将装配体打包，并连同干涉检查截图与软件组一起上传在git地址里  
       ⚠ 装配完成后请务必进行干涉检查，不允许出现大于1mm³的干涉（过盈配合等除外）    
-      <img src="./3.png" alt="装配体打包" width="640">
-      <img src="./1.png" alt="干涉检查截图" width="640">
+      <img src="datasheets/Machine/3.png" alt="装配体打包" width="640">
+      <img src="datasheets/Machine/1.png" alt="干涉检查截图" width="640">
   - TASK2.1 **小狗本体的3D打印**\
     先前没有使用过BambuStudio的小伙伴请从b站上学习完相应3D打印知识后再进行小狗本体等3D打印
      ⚠ 团队内不允许出现过夜打印件  

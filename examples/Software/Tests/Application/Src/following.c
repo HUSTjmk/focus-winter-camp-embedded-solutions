@@ -39,8 +39,8 @@ static void ultrasonic_echo_callback(uint8_t echo_state)
 
 void app_following_test_demo(void)
 {
-    bsp_ultrasonic_init();
-    bsp_timer_init();
+    //bsp_ultrasonic_init();
+    //bsp_timer_init();
     bsp_timer_start();
     bsp_ultrasonic_set_echo_callback(ultrasonic_echo_callback);
     while (1)

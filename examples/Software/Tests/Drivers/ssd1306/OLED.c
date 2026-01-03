@@ -18,6 +18,9 @@
   ***************************************************************************************
   */
 
+/*
+  学长在江科大开源的基础上把标准库程序用HAL库重写了（将I2C接口部分改写为HAL库，并用板级支持包bsp_i2c进行封装）
+*/  
 #include "stm32f1xx_hal.h"
 #include "bsp_i2c.h"
 #include "OLED.h"
@@ -259,6 +262,7 @@ void OLED_WriteData(uint8_t *Data, uint8_t Count)
   */
 void OLED_Init(void)
 {
+	//bsp_i2c_init();
 	OLED_GPIO_Init();			//先调用底层的端口初始化
 	
 	/*写入一系列的命令，对OLED进行初始化配置*/

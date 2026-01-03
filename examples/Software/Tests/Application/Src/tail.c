@@ -1,12 +1,12 @@
 #include "bsp_pwm.h"
 
+/*测试：舵机控制尾巴任务演示*/
 
 static void tail_servo_set_angle(int16_t angle)
 {
-    // Assuming angle is in degrees and ranges from 0 to 180
-    // Map angle to PWM duty cycle (example values, adjust as needed)
     if(angle > 180) angle = 180;
     if(angle < 0) angle = 0;
+    //将角度转换为PWM占空比
     float duty_cycle = (angle / 180.0f) * (BSP_SERVO_MAX_DUTY_CYCLE - BSP_SERVO_MIN_DUTY_CYCLE) + BSP_SERVO_MIN_DUTY_CYCLE;
     bsp_servo_set_pwm(duty_cycle);
 }

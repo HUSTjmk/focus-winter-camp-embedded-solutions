@@ -11,7 +11,7 @@ static void bsp_delay_microseconds(uint32_t us)
     count = (SystemCoreClock / 1000000) * us / 5; 
     while(count--);
 }
-
+/*Init函数可以忽略，因为HAL库一开始就帮你初始化了*/
 void bsp_ultrasonic_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStruct = {0};

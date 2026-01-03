@@ -3,6 +3,7 @@
 
 void(*bsp_timer_period_elapsed_callback_)(void) = NULL;
 
+/*Init函数可以忽略，因为HAL库一开始就帮你初始化了*/
 void bsp_timer_init(void)
 {
     MX_TIM4_Init();

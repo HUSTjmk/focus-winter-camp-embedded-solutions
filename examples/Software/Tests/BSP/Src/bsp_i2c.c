@@ -1,6 +1,7 @@
 #include "i2c.h"
 #include "bsp_i2c.h"
 
+/*Init函数可以忽略，因为HAL库一开始就帮你初始化了*/
 void bsp_i2c_init(void)
 {
     MX_I2C1_Init();

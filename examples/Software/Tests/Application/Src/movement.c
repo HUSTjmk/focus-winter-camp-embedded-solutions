@@ -1,6 +1,8 @@
 #include "bsp_pwm.h"
 #include "stdbool.h"
 
+/*测试：电机控制轮子任务演示*/
+
 static void left_wheel_move(float speed, bool dir)
 {
     if(dir)

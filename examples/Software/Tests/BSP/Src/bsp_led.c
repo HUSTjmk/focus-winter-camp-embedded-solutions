@@ -1,6 +1,7 @@
 #include "gpio.h"
 #include "bsp_led.h"
 
+/*Init函数可以忽略，因为HAL库一开始就帮你初始化了*/
 void bsp_led_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStruct = {0};

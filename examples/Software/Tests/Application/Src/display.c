@@ -1,5 +1,6 @@
 #include "OLED.h"
 
+/*测试：OLED显示任务演示*/
 
 void app_display_test_demo(void)
 {

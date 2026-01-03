@@ -8,6 +8,7 @@ bool enable_rxit_periodic = true;
 
 void(*bsp_uart_rx_event_callback_)(uint8_t *data, uint16_t size) = 0;
 
+/*Init函数可以忽略，因为HAL库一开始就帮你初始化了*/
 void bsp_uart_init(void)
 {
     MX_USART3_UART_Init();

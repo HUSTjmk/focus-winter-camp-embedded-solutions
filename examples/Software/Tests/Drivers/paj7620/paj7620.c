@@ -81,7 +81,7 @@ uint8_t PAJ7620_Init(void)
     };
     reg_addr = enable_cmd[0];
     reg_val = enable_cmd[1];       
-    return Write(reg_addr, &reg_val, 1);//启动传感器
+    return Write(reg_addr, &reg_val, 1);
 }
 
 Gesture_StatusTypeDef PAJ7620_Detect(void)

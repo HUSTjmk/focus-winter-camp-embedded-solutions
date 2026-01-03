@@ -1,6 +1,8 @@
 #include "tim.h"
 #include "bsp_pwm.h"
 
+/*Init函数可以忽略，因为HAL库一开始就帮你初始化了*/
+
 void bsp_wheel_pwm_init(void)
 {
     MX_TIM2_Init();

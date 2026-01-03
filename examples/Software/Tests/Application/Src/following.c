@@ -2,6 +2,8 @@
 #include "bsp_timer.h"
 #include "main.h"
 
+/*测试：超声波测距任务演示，带中断版本。跟随功能请自行实现哦*/
+
 #define SPEED_OF_SOUND_CM_PER_US 0.0343f // Speed of sound in cm/us
 #define FILTER_ALPHA 0.3f
 uint32_t time_elapsed;

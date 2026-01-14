@@ -56,7 +56,7 @@
   2. **运动控制**       
     运动是桌宠的必备技能。我们为你们提供了两个个直流减速电机和一个舵机，你需要用他们驱动轮子/尾巴，使你的桌宠动起来！而最简单的驱动电机/舵机方式需要用到很基础但很实用的一种技术——PWM，并且驱动电机时我们采用drv8870电机驱动芯片实现，下面是我们提供的教程与手册：  
     路径：[datasheets/Software/运动相关资料](datasheets/Software/运动相关资料)   
-    网址：对应教程的pwm章节 && [CSDN上的一篇DRV8837教程](https://blog.csdn.net/weixin_45229061/article/details/142480529)  
+    网址：对应教程的pwm章节 && [CSDN上的一篇DRV8837教程，和8870的原理是一样的](https://blog.csdn.net/weixin_45229061/article/details/142480529)  
   3. **语音交互**
     语音是人机交互的重要方式。我们将用SU-03T芯片实现简单的离线对话，下面是我们提供的教程与手册：  
     路径：[datasheets/Software/SU-03T1语音模块无底板已焊接](datasheets/Software/SU-03T1语音模块无底板已焊接)   

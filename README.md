@@ -62,7 +62,7 @@
     路径：[datasheets/Software/SU-03T1语音模块无底板已焊接](datasheets/Software/SU-03T1语音模块无底板已焊接)   
     网址：对应教程的串口章节 && [机芯智能B站官方教程](https://www.bilibili.com/video/BV1DG4y1u7mb/)
   4. **UI设计**  
-    相必很多人看过江科大的stm32教程，上面用了OLED作为一个有力的调试工具。当然OLED也可以显示许多表情和文字，实现产品丰富的UI功能，下面是我们提供的教程与手册：    
+    想必很多人看过江科大的stm32教程，上面用了OLED作为一个有力的调试工具。当然OLED也可以显示许多表情和文字，实现产品丰富的UI功能，下面是我们提供的教程与手册：    
     路径：[datasheets/Software/0.96寸OLED](datasheets/Software/0.96寸OLED)  
     网址：[江科大OLED教程](https://www.bilibili.com/video/BV1EN41177Pc/) && [HAL库版本的OLED使用](https://www.bilibili.com/video/BV1M6ioYzE58)  
   5. **跟随功能**  
@@ -75,3 +75,8 @@
     我们要使用的是PAJ7620U2手势传感器模块，它可以识别基础的手势，丰富我们与桌宠的交互方式，下面是我们提供的教程与手册：
     路径：[datasheets/Software/PAJ7620手势传感器](datasheets/Software/PAJ7620手势传感器)  
     网址:[CSDN上的一篇教程](https://blog.csdn.net/2501_92816716/article/details/154502471)
+
+ - **效果呈现**   
+  1. 你需要将上述功能整合起来，而不是每个模块独立运行，例如手势可以控制电机的运动。此外开动脑筋：如何让你的桌宠同时进行多个任务？运动的同时还能监测语音控制指令。我们希望看到一个完整的电子宠物哦~
+  2. 相关的代码请发送到movingon_2023@qq.com，命名为“小队名称+代码完成人姓名（可多位）”。当然你可以创建自己的github仓库，并向群管理员**jmk**私信你的github仓库地址
+  3. 期待在结营时看到你们的实物成果哦~

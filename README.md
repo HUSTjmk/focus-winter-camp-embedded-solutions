@@ -66,7 +66,7 @@
     路径：[datasheets/Software/0.96寸OLED](datasheets/Software/0.96寸OLED)  
     网址：[江科大OLED教程](https://www.bilibili.com/video/BV1EN41177Pc/) && [HAL库版本的OLED使用](https://www.bilibili.com/video/BV1M6ioYzE58)  
   5. **跟随功能**  
-    我们已经实现了桌宠的基本功能——行走、对话。但是学长学姐想要一个”粘人的桌宠“。为实现这个功能，或许HC-SR04超声波模块会有所帮助，下面是我们提供的教程与手册：  
+    我们已经实现了桌宠的基本功能——行走、对话。但是学长学姐想要一个”粘人的桌宠“。为实现这个功能，或许HC-SR04超声波模块会有所帮助(跟随只要求一维运动，即前进后退)，下面是我们提供的教程与手册：  
     路径：[datasheets/Software/HC-SR04超声模块](datasheets/Software/HC-SR04超声模块)  
     网址：[CSDN上的一篇教程，讲超声模块原理及如何使用](https://blog.csdn.net/qq_16519885/article/details/113778828) && [CSDN另外一篇教程，告诉你一种智能小车这么做，看看里面的跟随功能即可，其他功能也可以借鉴一下](https://blog.csdn.net/m0_74712453/article/details/134113174) && [PID可以让运动更平滑一些](https://www.bilibili.com/video/BV1oE421T7Ey)  
     By the way: 这是一个演示视频，本地路径为：[docs/Software/ultrasonic-pid.mp4](docs/Software/ultrasonic-pid.mp4)    
